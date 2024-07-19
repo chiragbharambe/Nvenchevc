@@ -57,6 +57,21 @@ This repository contains a bash script that processes video files in a specified
 - **File Validation**:
   It validates the input file to ensure it is a proper video file before attempting to process it.
 
-## Example
+- **File Size Assessment**:
+  The script can assess the quality and size of the file to avoid re-encoding videos that are already small.
 
-The script will look for `.mkv` and `.mp4` files in the directory it is placed in and re-encode them. If successful, the original file is replaced with the processed file.
+## Future Plans and Goals
+
+1. **Text User Interface (TUI)**:
+   - Integrate a TUI similar to `dua` for an interactive and user-friendly experience.
+
+2. **File Quality Assessment**:
+   - Implement functionality to assess the quality and size of each video file.
+   - Skip re-encoding for videos that are already small to save processing time.
+
+3. **Phone Automation**:
+   - Set up automation with your mobile phone to streamline video processing:
+     - When connected to a specified Wi-Fi network, the phone will automatically send captured videos to the computer.
+     - The computer will process the videos, save the original, and send the processed video back to the phone.
+     - The original video will be deleted from the phone, but both original and processed versions will be saved on the computer.
+     - This setup aims to save significant storage space on the phone as videos captured by phones are typically large in size.
